@@ -1,0 +1,96 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px !important;
+}
+
+.bgPerso {
+  background-color: white;
+  box-shadow: 0 0 45px #adadad;
+  border-radius: 0.4rem;
+}
+
+.btnPerso {
+  background-color: #00d863 !important;
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.8s !important;
+  color: white !important;
+  margin-right: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .btnPerso {
+    margin-right: 0.8rem;
+  }
+}
+
+.btnPerso h6 {
+  margin-bottom: 0px;
+  margin-top: 4px !important;
+}
+
+.btnPerso:last-child {
+  margin-right: 0px;
+}
+
+.btnPerso:hover {
+  background-color: #030229 !important;
+  box-shadow: 0 0 10px #030229;
+}
+
+@media screen and (min-width: 768px) {
+  .borda-left {
+    border-left: solid 1px rgba(129, 129, 129, 0.562) !important;
+  }
+}
+
+.myNav {
+  background-color: #00d863;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap !important;
+}
+
+.myNav .nav-link {
+  color: white;
+  transition: all 0.8s;
+}
+
+.myNav .nav-link:hover {
+  background-color: #030229;
+  border: none;
+}
+
+.iBlog {
+  overflow-wrap: break-word;
+  overflow-y: auto;
+  height: 400px;
+}
+
+.iBlog .vBlog {
+  border-bottom: solid 1px rgba(129, 129, 129, 0.562);
+  margin-bottom: 5px !important;
+  padding-bottom: 5px;
+}
+
+.iBlog .cBlog {
+  height: 400px;
+  overflow-y: auto;
+}
+
+.iBlog .cBlog .linkBlog {
+  color: #030229 !important;
+}
+
+.iBlog .cBlog .linkBlog img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.iBlog .cBlog .divBlog:hover {
+  background-color: #00d863;
+}
+
+.iBlog .cBlog .divBlog {
+  margin-bottom: 5px;
+}

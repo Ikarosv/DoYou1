@@ -1,0 +1,12 @@
+.bgCard {
+    background-color: #00d863 !important;
+  }
+  
+  .bgCard .card-footer {
+    color: #030229;
+  }
+  
+  .bgTitulo {
+    background-color: #00d863 !important;
+    color: #030229;
+  }

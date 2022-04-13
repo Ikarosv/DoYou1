@@ -1,0 +1,32 @@
+.myNav {
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap !important;
+}
+
+.myNav .nav-link {
+  color: #00d863;
+}
+
+.myNav .active {
+  border-bottom: none !important;
+  color: #09f376 !important;
+}
+
+@media screen and (max-width: 425px) {
+  .tipo {
+    display: none;
+    visibility: hidden;
+    width: 0px;
+    padding: 0px !important;
+  }
+}
+
+.myTable {
+  background-color: #85968d;
+  color: white;
+}
+
+.table-bordered {
+  border-color: #4effa0 !important;
+}

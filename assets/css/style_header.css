@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700");
+body {
+  font-family: "Manrope", sans-serif !important;
+  background-color: antiquewhite;
+}
+
+button:focus {
+  outline: none !important;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Header {
+  backdrop-filter: blur(12px);
+  background-color: black;
+  font-weight: 700 !important;
+  border-bottom: #00d863 solid 1px;
+}
+
+.Header .Header-title {
+  color: #00d863;
+  font-size: 2rem;
+  text-decoration: none;
+  filter: drop-shadow(0 0 20px #00d863);
+}
+
+@media screen and (max-width: 768px) {
+  .Header .Header-title {
+    font-size: 1.8rem;
+  }
+  .Header svg {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.Header .navbar-toggler {
+  border: none;
+}
+
+.Header svg {
+  border-radius: 100%;
+}
+
+.Header .nav-item:hover svg {
+  fill: #00d863;
+  filter: drop-shadow(0 0 1rem #00d863);
+}
+
+.DoYou {
+  color: #00d863;
+}
+
+.myBtn {
+  background-color: #00d863 !important;
+  border-radius: 1.38rem !important;
+  border: #00d863 !important;
+  color: #030229 !important;
+  transition: all 0.8s ease-in-out !important;
+}
+
+.myBtn:hover {
+  background-color: #343a40 !important;
+  color: #00d863 !important;
+  border: none !important;
+  box-shadow: 0 0 50px;
+}
+
+.myBtn-Inverse {
+  background-color: #030229 !important;
+  border-radius: 1.38rem !important;
+  border: #030229 !important;
+  color: #00d863 !important;
+  transition: all 0.8s ease-in-out !important;
+}
+
+.myBtn-Inverse:hover {
+  background-color: #00d865be !important;
+  color: #030229 !important;
+  border: none !important;
+  box-shadow: 0 0 50px;
+}
+
+.h3DoYou {
+  background-color: #00d863;
+  color: white;
+}
+
+.texto-sobre {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.texto-sobre h5 {
+  border-bottom: #00d863 solid 0.8px;
+  color: #00d863;
+}
+
+footer.footer {
+  border-top: #00d863 solid 1.4px;
+}
+
+@media screen and (min-width: 769px) {
+  footer.footer span, footer.footer .footer-link {
+    font-size: 100% !important;
+    transition: all 1s;
+  }
+}
+
+footer.footer span {
+  font-size: 87.5%;
+  color: #212529;
+  font-family: "SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New",monospace;
+  transition: all 1s;
+}
+
+@keyframes footer {
+  0% {
+    color: #00d863;
+    transform: scale(1, 1);
+  }
+  25% {
+    color: #03dbeb;
+    transform: scale(1.1, 1.1);
+  }
+  50% {
+    color: #0400ff83;
+    transform: scale(1, 1);
+  }
+  75% {
+    color: #ff00ea;
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    color: #ff0000;
+    transform: scale(1, 1);
+  }
+}
+
+footer.footer .footer-link:hover {
+  text-decoration: none;
+  color: #ff0000;
+  transition: all 2s ease-in-out;
+  animation: footer 4s ease-in-out 0s infinite normal both;
+}
+
+footer.footer .rede-social, footer.footer .rede-social:hover {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #030229;
+}
+
+.sub-header {
+  background-color: white;
+  border-bottom: solid 1px #00d863;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+p + p {
+  text-indent: 1.5em;
+  margin-top: 0;
+}
