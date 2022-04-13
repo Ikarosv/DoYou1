@@ -7,9 +7,11 @@ body {
 button:focus {
   outline: none !important;
 }
+
 a:link {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
   color: inherit;
