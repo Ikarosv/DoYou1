@@ -117,17 +117,24 @@ if (!isset($_SESSION['nome'])) {
             <div class="d-flex flex-column bgPerso p-3 mr-md-4 iBlog">
                 <h5 class="vBlog">Nosso Blog</h5>
                 <div class="cBlog">
-                    <?php foreach($blogs as $b){ ?>
+                    
                         <div class="divBlog py-2">
-                            <a href="blog_post.php?id=<?php echo $b['idPost']; ?>" class="linkBlog d-flex py-2">
-                                <img src="<?php echo $b['imagem'] ?>" alt="<?php echo $b['alt_img'] ?>" style="width:10vw; height: 8vw; margin-right: 5px" >
-                                <?php echo $b['titulo'] ?>
-                             
+                        <?php foreach($blogs as $b){ ?>
+                            <a href="blog_post.php?id=<?php echo $b['idPost']; ?>" class="linkBlog d-flex flex-column py-2">
+                                <div class="d-flex align-items-center">
+
+                                    <img src="<?php echo $b['imagem'] ?>" alt="<?php echo $b['alt_img'] ?>" style="width:10vw; height: 8vw; margin-right: 5px" >
+                                    <p><?php echo $b['titulo'] ?></p>
+                                    
+                                </div>
+                                <p class="autor">
+                                    <small class="text-muted font-italic"><?php echo $b['autor']?></small>
+                                </p>
                             </a>
-                            <p><small class="text-muted font-italic"><?php echo $b['autor']?></small>
-                    </p>
-                    </div>
+                            
                     <?php } ?>
+                    </div>
+                    
                 </div>
             </div>
             <!-- Grafico -->
