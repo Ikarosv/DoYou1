@@ -1,11 +1,16 @@
 <?php
   require_once "db/inserir_movimentacao.php";
   require_once "db/listar_categorias.php";
-
+  if (isset($_REQUEST['tm'])){
+    $tm = $_REQUEST['tm'];
+    $tipo_mov = $tm == "1"?"Receita":"Despesa";
+  } else {
+    $tipo_mov = "TIPO DE MOVIMENTAÇÃO NÃO IDENTIFICADO";
+  }
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 
     <meta charset="UTF-8">
@@ -49,29 +54,40 @@
           
         
         <fieldset>
-        <label for="categoria">Categoria:</label>
-          <select id="categoria" name="categoria">
-          <?php foreach($categorias as $c) {?>
-              <option value="<?php echo $c['idCategoria']?>"><?php echo $c['nome']?></option>
-            <?php } ?></select>      
+          <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria">
+            <?php foreach($categorias as $c) {?>
+                <option value="<?php echo $c['idCategoria']?>"><?php echo $c['nome']?></option>
+              <?php } ?></select>      
 
-        <label for="des">Descrição:</label>
-          <input type="text" id="des" name="des" required>
+          <label for="des">Descrição:</label>
+            <input type="text" id="des" name="des" required>
 
-        <label for="date">Data:</label>
-        <input type="date" id="date" name="date" required>
+          <label for="date">Data:</label>
+          <input type="date" id="date" name="date" required>
 
-        <label for="valor">Valor: R$</label>
-        <input type="text" id="valor" name="valor" onkeypress="$(this).mask('#.###.##0,00', {reverse: true});" required>
+          <label for="valor">Valor: R$</label>
+          <input type="text" id="valor" name="valor" onkeypress="$(this).mask('#.###.##0,00', {reverse: true});" required>
 
-          
+            
         </fieldset>
           
         <div class="form-row justify-content-center">
-        <div class="form-group  col-md-4">      
-            <button class="form-control btn btn-success" name="nova_movimentacao">Confirmar</button>
-            <input type="reset" class="form-control btn btn-secondary mt-2" value="Limpar dados">
-            <a href="tabela.php?tt=0" class="form-control btn btn-light mt-2">Voltar</a>
+        <div class="form-group d-flex w-100 justify-content-center justify-content-around">      
+          <div class="d-flex flex-column">
+            
+            <button class="btn btn-success" name="confirmar">Confirmar</button>
+
+            <input type="reset" class="btn btn-secondary mt-2" value="Limpar dados">
+
+          </div>
+          <div class="d-flex flex-column">
+
+            <button class="btn btn-success" name="nova_mov">Nova <?php echo $tipo_mov ?> </button>
+              
+            <a href="tabela.php?tt=0" class="btn btn-light mt-2">Voltar</a>
+            
+          </div>
         </div>
         </div>
         

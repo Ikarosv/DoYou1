@@ -5,7 +5,7 @@
     session_start(); 
     
 
-    if(isset($_REQUEST['nova_movimentacao'])){ 
+    if(isset($_REQUEST['confirmar']) || isset($_REQUEST['nova_mov']) ){ 
 
         $idUsuario = $_SESSION['id'];
         $vlr =  str_replace('.','',$_REQUEST['valor']);
@@ -44,11 +44,17 @@
 
        // mysqli_query($conn, $sql);
 
+        if(isset($_REQUEST['confirmar'])){
+            header("Location: tabela.php?tt=0");
 
-       header("Location: tabela.php?tt=0");
+
+            exit();
+        }
+        if(isset($_REQUEST['nova_mov'])){
+            header("Location: form.php?tm=$idTipoMov");
 
 
-        exit();
-        
+            exit();
+        }
 
     }
