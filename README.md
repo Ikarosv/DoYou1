@@ -13,18 +13,17 @@
 
  - É necessário Cadastro do usúario para acessar as demais funcionalidades do sistema. 
 
-
-  - O usuário realiza o login de sua conta, tendo acesso as funcionalidades de adicionar as tabelas de Despesa/Receita, vizualizar as tabelas, excluir, editar, e gerar um gráfico baseado nos dados das tabelas.
+ - O usuário realiza o login de sua conta, tendo acesso as funcionalidades de adicionar as tabelas de Despesa/Receita, vizualizar as tabelas, excluir, editar, e gerar um gráfico baseado nos dados das tabelas.
   
-   - Para gerar o gráfico, é necessário ter pelo menos um registro de Despesa ou Receita.
+ - Para gerar o gráfico, é necessário ter pelo menos um registro de Despesa ou Receita.
    
-    - Ao inserir os dados no form de Despesa ou Receita, um registro é criado na tabela, podendo ser vizualizado pelo usúario, ao acionar a vizualização das tabelas.
+ - Ao inserir os dados no form de Despesa ou Receita, um registro é criado na tabela, podendo ser vizualizado pelo usúario, ao acionar a vizualização das tabelas.
     
-       - O sistema possui criptografia md5 nas senhas dos usuários.
+ - O sistema possui criptografia md5 nas senhas dos usuários.
 
-        - O SGBD utilizado no projeto foi o mysql.
+ - O SGBD utilizado no projeto foi o mysql.
 
-         - O blog terá informações vinda de fontes externas, porém confiavéis, sobre educação financeira.
+ - O blog terá informações vinda de fontes externas, porém confiavéis, sobre educação financeira.
 
         
 ## Tecnologias
